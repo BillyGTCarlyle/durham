@@ -25,6 +25,10 @@ Globus is a data transfer management tool which is used to orchestrate data move
 
 RUCIO is a policy-driven data management tool which is used to orchestrate data movement between remote sites.
 
+## iPerf3 tests
+
+We have tested the network bandwidth between several sites using [iperf3](iperf3.md). Although this is not a data transfer technology, it is interesting to compare the transfer rates observed in these tests with those achieved by the data movement technologies mentioned above.
+
 ## Dataset generation
 
 We will perform data transfer tests using known, repeatable datasets.  To this end, we provide a [dataset generator](dataset_generation.md) which can be used to  generate the datasets used on any platform such that repeatable tests can be performed.
