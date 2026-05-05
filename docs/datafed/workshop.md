@@ -44,7 +44,7 @@ Tuesday 19th
 - 09:00 Arrival and refreshments
 - 09:15 Welcome
 - 09:20 Data sharing at the Vera C Rubin Telescope (LSST), George Beckett
-- 09:40 Globus usage on JASMIN, Matt Pritchard
+- 09:40 [Globus usage on JASMIN](#globus-usage-on-jasmin), Matt Pritchard
 - 10:00 Data transfer facilities on COSMA, Alastair Basden
 - 10:20 Globus at the Rosalind Franklin Institute, Dimitrios Bellos
 - 10:40 Exploring Globus and rsync performance, James Perry
@@ -66,6 +66,10 @@ A talk on how we provide Globus services to users of JASMIN. From different pers
 - future plans, including
   - STFC subscription
 
+
+### Data transfer facilities on COSMA
+
+The COSMA HPC system, part of the DiRAC national facility, provides users with multiple options for data transfer.  Some of these are described here, including how users can optimise their workflows.  Several project-specific bespoke capabilities are also described.
 
 ### Globus at the RFI
 
