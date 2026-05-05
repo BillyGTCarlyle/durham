@@ -8,11 +8,12 @@ It has a concept of a [research data portal](https://docs.globus.org/guides/reci
 
 ## Transfer rates
 
-| | Durham | Edinburgh | Cambridge |
-| --- | --- | --- | --- |
-| Durham | | [970MB/s](#cosma-archer2-transfer-tests) | [1360MB/s](#cosma-csd3-transfer-tests) |
-| Edinburgh | [994MB/s](#cosma-archer2-transfer-tests) | | [1810MB/s](#csd3-archer2-transfer-tests) |
-| Cambridge | [751MB/s](#cosma-csd3-transfer-tests) | [2220MB/s](#csd3-archer2-transfer-tests) | |
+| | Durham | Edinburgh | Cambridge | JASMIN | JISC |
+| --- | --- | --- | --- | --- | --- |
+| Durham | | [970MB/s](#cosma-archer2-transfer-tests) | [1360MB/s](#cosma-csd3-transfer-tests) | [386MB/s](#jasmin-transfer-tests) | [462MB/s](#jisc-transfer-tests) |
+| Edinburgh | [994MB/s](#cosma-archer2-transfer-tests) | | [1810MB/s](#csd3-archer2-transfer-tests) | [876MB/s](#jasmin-transfer-tests) | [1090MB/s](#jisc-transfer-tests) |
+| Cambridge | [751MB/s](#cosma-csd3-transfer-tests) | [2220MB/s](#csd3-archer2-transfer-tests) | | [819MB/s](#jasmin-transfer-tests) | [712MB/s](#jisc-transfer-tests) |
+| JASMIN | [453MB/s](#jasmin-transfer-tests) | [617MB/s](#jasmin-transfer-tests) | [622MB/s](#jasmin-transfer-tests) | | |
 
 (from location in column to location in row)
 
@@ -126,6 +127,76 @@ After parallelism was enabled at Cambridge, we also reran our tests between COSM
 | 23/02/2026 11:28 | COSMA | CSD3 | 50 | 10 | 1360.00 |
 
 Interestingly, a significant improvement was again observed, particularly in the Durham to Cambridge direction which saw transfer speeds roughly double relative to the previous tests. As with the tests between Edinburgh and Cambridge, these transfer times appeared to be more consistent across multiple tests than the earlier ones.
+
+## JASMIN Transfer Tests
+
+After gaining access to the STFC's JASMIN system at RAL, we ran Globus transfer tests between here and Durham, Cambridge and Edinburgh. Due to restricted disk space quota on JASMIN a smaller dataset (9x10GB files) was used for these tests.
+
+| Source | Destination | Transfer rate (MB/s) |
+| --- | --- | --- |
+| COSMA | JASMIN | 255.0 |
+| JASMIN | COSMA | 385.7 |
+| COSMA | JASMIN | 452.8 |
+| JASMIN | COSMA | 128.9 |
+| COSMA | JASMIN | 195.7 |
+| JASMIN | CSD3 | 288.3 |
+| CSD3 | JASMIN | 265.9 |
+| JASMIN | CSD3 | 819.4 |
+| CSD3 | JASMIN | 621.6 |
+| JASMIN | ARCHER2 | 837.7 |
+| ARCHER2 | JASMIN | 617.3 |
+| JASMIN | ARCHER2 | 875.5 |
+| ARCHER2 | JASMIN | 503.6 |
+
+Despite the smaller dataset, the transfer rates were broadly similar to those observed in our other tests. However there does appear to be a wider variability between the performance of individual test runs than we have seen in other tests which could indicate that the shorter running transfers are more sensitive to network conditions.
+
+## Scale tests
+
+After observing that [rsync](rsync.md) appears to perform more poorly with smaller data sizes, we tested Globus with the smaller 90GB dataset between our three core sites.
+
+| Source | Destination | Transfer rate (MB/s) |
+| --- | --- | --- |
+| ARCHER2 | COSMA | 522.7 |
+| COSMA | ARCHER2 | 752.9 |
+| ARCHER2 | COSMA | 531.3 |
+| COSMA | ARCHER2 | 771.6 |
+| ARCHER2 | CSD3 | 1190 |
+| CSD3 | ARCHER2 | 1050 |
+| ARCHER2 | CSD3 | 1490 |
+| CSD3 | ARCHER2 | 1080 |
+| COSMA | CSD3 | 1000 |
+| CSD3 | COSMA | 431.5 |
+| COSMA | CSD3 | 953.6 |
+| CSD3 | COSMA | 469.1 |
+
+From these results, Globus's performance appears to be less affected by the dataset size than rsync's. Although some of the tests do show a lower throughput compared to the large 5TB tests, the difference is much less than the factor of 5-10 observed with rsync.
+
+## JISC transfer tests
+
+After JISC made some of our test datasets available via Globus, we ran several tests between JISC and our other sites. Note that these tests were unidirectional as we did not have write access to JISC, and also that JISC to JASMIN was not tested due to lack of disk quota on JASMIN.
+
+| Source | Destination | Dataset | Transfer rate (MB/s) |
+| --- | --- | --- | --- |
+| JISC | COSMA | 50x10GB | 461.6 |
+| JISC | COSMA | 50x100GB | 389.4 |
+| JISC | COSMA | 1000x1GB | 341.4 |
+| JISC | COSMA | 50x10GB | 360.3 |
+| JISC | COSMA | 50x100GB | 336.1 |
+| JISC | COSMA | 1000x1GB | 377.0 |
+| JISC | CSD3 | 50x10GB | 684.7 |
+| JISC | CSD3 | 50x100GB | 569.8 |
+| JISC | CSD3 | 1000x1GB | 696.4 |
+| JISC | CSD3 | 50x10GB | 711.8 |
+| JISC | CSD3 | 50x100GB | 551.7 |
+| JISC | CSD3 | 1000x1GB | 676.1 |
+| JISC | ARCHER2 | 50x10GB | 972.8 |
+| JISC | ARCHER2 | 50x100GB | 838.9 |
+| JISC | ARCHER2 | 1000x1GB | 1060 |
+| JISC | ARCHER2 | 50x10GB | 1030 |
+| JISC | ARCHER2 | 50x100GB | 829.5 |
+| JISC | ARCHER2 | 1000x1GB | 1090 |
+
+Transfer rates were in the same range as those already observed between the other sites. Notably, and slightly surprisingly, the largest dataset (50x100GB files) was generally slightly slower to transfer than the two smaller datasets, although in most cases the speed difference was relatively small.
 
 ## Globus Command Line Interface Usage
 
