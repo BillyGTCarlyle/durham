@@ -44,7 +44,7 @@ Tuesday 19th
 - 09:00 Arrival and refreshments
 - 09:15 Welcome
 - 09:20 Data sharing at the Vera C Rubin Telescope (LSST), George Beckett
-- 09:40 Globus usage (including Flows and Compute) on JASMIN, Matt Pritchard
+- 09:40 Globus usage on JASMIN, Matt Pritchard
 - 10:00 Data transfer facilities on COSMA, Alastair Basden
 - 10:20 Globus at the Rosalind Franklin Institute, Dimitrios Bellos
 - 10:40 Exploring Globus and rsync performance, James Perry
@@ -54,6 +54,35 @@ Tuesday 19th
 - 12:10 Discussion
 - 12:30 Lunch
 - 13:30 End of workshop
+
+## Abstracts
+
+### Globus usage on JASMIN
+
+A talk on how we provide Globus services to users of JASMIN. From different perspectives:
+- Service operator (our multi-DTN setup, how we use our own OIDC server, potential for multiple collections on same endpoint, how we monitor)
+- User Support perspective (how access is provided, documentation, common queries)
+- Known use cases (ad-hoc transfers, ARCHER2-JASMIN workflow, distributed lab instruments, large-scale replication)
+- future plans, including
+  - STFC subscription
+
+
+### Globus at the RFI
+
+The Rosalind Franklin Institute has been using Globus for 4 years to transfer high-resolution multimodal biological data from our instruments to our analysis platforms. Approximately Franklin is generating around 70 terabytes a month, which requires high speed and robust transfers. Distributed data transfer solutions, such as Globus facilitate this goal, and we aim to also use it in automated pipelines that do not require a human in the loop. Towards this goal, Rosalind Franklin Institute currently holds a Globus subscription and are using many of the cabilities that Globus offers.
+
+Firstly, we have set up a Globus Connect Server (GCS) endpoint that is serviced by multiple Data Transfer Nodes (aka multiple machines) to increase both its robustness and how much network traffic it can handle. Our GCS endpoint services multiple collections, some utilize Globus' POSIX connector and others Globus' S3 connector. We also take advantage of the Globus' groups functionality to manage the access permissions in our S3 (guest) collections. This is because the S3 compatible object store we are using, Echo (1), does not allow to assign an owner either to the buckets or objects of an account. Thus Globus allowed us to implement fine grain access control of the object store, without having to provide any object store keys to our users, which could be detrimental if they accidentally get leaked.
+
+Secondly, we have developed and released FlowCron (2) which is a Function-as-a-Service software tool that can facilitate users to access HPCs to process their data using a Globus Flow to accommodate any data transfers. This significantly reduces the time to science. 
+
+Lastly, we released Rosalind Franklin Institute’s GlobusAPI (3). Our RFI-GlobusAPI container image provides an intuitive interface with Globus Python SDK, enabling the easy deployment of Globus microservices, which facilitates the incorporation of Globus within automated data processing pipelines. RFI-GlobusAPI offers multiple useful high in abstraction commands, and it has already been tested as part of ArgoWF workflows. Furthermore, RFI-GlobusAPI is open source and available to all. Our future goals include the expansion of RFI-GlobusAPI with further utility, allowing us to incorporate it into different parts of our data lifecycle to create a secure, scalable, reproducing and efficient automated data infrastructure that can provide FAIR (4,5) data for all our science.
+ 
+1. https://www.sc.stfc.ac.uk/platforms-and-services/echo/
+2. https://doi.org/10.12688/wellcomeopenres.23491.2
+3. https://github.com/rosalindfranklininstitute/rfi-globus-api
+4. https://doi.org/10.1038/sdata.2016.18
+5. https://www.go-fair.org/fair-principles 
+
 
 ## Directions
 
