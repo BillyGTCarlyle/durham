@@ -42,9 +42,16 @@ Monday 18th
 Tuesday 19th
 
 - 09:00 Arrival and refreshments
-- 09:30 Data sharing workshop
+- 09:15 Welcome
+- 09:20 Data sharing at the Vera C Rubin Telescope (LSST), George Beckett
+- 09:40 Globus usage (including Flows and Compute) on JASMIN, Matt Pritchard
+- 10:00 Data transfer facilities on COSMA, Alastair Basden
+- 10:20 Globus at the Rosalind Franklin Institute, Dimitrios Bellos
+- 10:40 Exploring Globus and rsync performance, James Perry
 - 11:00 Refreshments
-- 11:30 Data sharing workshop
+- 11:30 JISC, Janet, network test facilities, perfSonar, Globus test, Tim Chown
+- 11:50 Tuning and measuring network performance, Chris Walker
+- 12:10 Discussion
 - 12:30 Lunch
 - 13:30 End of workshop
 
