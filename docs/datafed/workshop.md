@@ -46,7 +46,7 @@ Tuesday 19th
 - 09:20 Data sharing at the Vera C Rubin Telescope (LSST), George Beckett
 - 09:40 [Globus usage on JASMIN](#globus-usage-on-jasmin), Matt Pritchard
 - 10:00 [Data transfer facilities on COSMA](workshop.md#data-transfer-facilities-on-cosma), Alastair Basden
-- 10:20 [Globus at the Rosalind Franklin Institute](#globus-at-the-rfi), Dimitrios Bellos
+- 10:20 [Globus at the Rosalind Franklin Institute](./workshop.md#globus-at-the-rfi), Dimitrios Bellos
 - 10:40 Exploring Globus and rsync performance, James Perry
 - 11:00 Refreshments
 - 11:30 JISC, Janet, network test facilities, perfSonar, Globus test, Tim Chown
