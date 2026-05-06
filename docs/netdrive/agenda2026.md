@@ -220,9 +220,25 @@ Free time to take part in a social activity of your choice.
 
 ## Friday (AM): Advocating for change
 
-### Friday 09:00 - Keynote: Sufficiency, Carolynne Lord (Centre for Ecology and Hydrology)
+### Friday 09:00 - Keynote: Making the Case for Sufficiency: Cross-case study lessons, Carolynne Lord (UK Centre for Ecology and Hydrology)
 
-Code efficiency improvements can lead us to run more simulations, negating any savings in emissions.  This can be useful, leading to more science.  But there is a balance bewteen more runs, and making do with what you need, i.e. sufficiency.  This talk will discuss sufficiency from a DRI context.
+Efficiency has long been considered key in increasing the
+sustainability of technologies and digital infrastructures. However,
+what is often seen with such measures is that they simultaneously make
+systems cheaper, quicker, and increase their capacity: leading to an
+increase in demand, and an associated energy cost. It is important,
+therefore, that we begin to understand how we might hold patterns of
+demand still, to fully capitalise on efficiency gains. Sufficiency
+(i.e., a concept of ‘enoughness’) is being increasingly explored in
+other sustainability domains, but what would this look like in the
+context of DRI? This presentation shares the lessons learnt about
+waste from two separate case studies of DRI systems – one relating to
+HPC systems, and the second about the use and development of a
+process-based model. By reflecting on these lessons, this presentation
+aims to explore how we can move from the idea that in dividuals are
+responsible for tackling waste (i.e., individual behaviour change), to
+a system that promotes and encourages sufficiency in use and provision
+(i.e., sufficiency governance).
 
 ### Friday 09:30 - Practical: ARCHER2 monitoring, Lorna Smith (EPCC)
 
