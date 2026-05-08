@@ -1,0 +1,37 @@
+# Useful information: Summer School 2026
+
+
+## Arrival
+
+You will be arriving in Durham by train on Monday morning.
+
+If you wish to leave luggage at the [hotel](https://www.marriott.com/en-gb/hotels/ncldd-delta-hotels-durham-royal-county/overview/), this is fine - they have a luggage room - though it will be too early to check in.  Alternatively feel free to bring your bag with you straight to the summer school from the station.
+
+The Marriott Hotel is a 0.5 mile walk from the railway station.
+
+The Summer School venue (the Mountjoy Centre and Department of Computer Science, DH! 3UP) is about a mile from the hotel, or 1.5 miles from the station (with the most direct route from the station being a beautiful walk along the river banks).
+
+The [summer school location is here](https://hpc-days.github.io/Durham-HPC-Days-2026/rooms/) - please go to the main entrance of the Mountjoy Centre upon arrival to register.
+
+Please aim to arrive between 12:00-12:30, to allow you to register and grab some lunch, before we start at 13:00.  Most trains are scheduled to arrive before this (bar one or two coming from further away).
+
+Please let us know if you are likely to be late.
+
+
+
+## Food
+
+The summer school is fully catered and we have noted your dietary requiremenets.
+
+## Slack
+
+We have set up a Slack channel so that you can chat with other participants.  Should you wish to be added, please let us know.
+
+## Agenda
+
+The [agenda is here](ss2026.md#agenda)
+
+## Departure
+
+Your departure train is booked for Friday afternoon (19th June).
+
