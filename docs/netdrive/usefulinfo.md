@@ -17,7 +17,9 @@ Please aim to arrive between 12:00-12:30, to allow you to register and grab some
 
 Please let us know if you are likely to be late.
 
+## Registration
 
+There will be a registration desk in the Mountjoy Centre, where you can pick up a name badge, and then grab some lunch.
 
 ## Food
 
