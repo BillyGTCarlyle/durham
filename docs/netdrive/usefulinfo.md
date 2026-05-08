@@ -5,11 +5,11 @@
 
 You will be arriving in Durham by train on Monday morning.
 
-If you wish to leave luggage at the [hotel](https://www.marriott.com/en-gb/hotels/ncldd-delta-hotels-durham-royal-county/overview/), this is fine - they have a luggage room - though it will be too early to check in.  Alternatively feel free to bring your bag with you straight to the summer school from the station.
+If you wish to leave luggage at the [Delta Hotels Durham Royal County](https://www.marriott.com/en-gb/hotels/ncldd-delta-hotels-durham-royal-county/overview/), this is fine - they have a luggage room - though it will be too early to check in.  Alternatively feel free to bring your bag with you straight to the summer school from the station.
 
-The Marriott Hotel is a 0.5 mile walk from the railway station.
+The [Hotel](https://www.google.com/maps/place/Durham+DH1+3JN) (sometimes known as the Marriott, in addition to its current name of Delta Hotels Durham Royal County) is a 0.5 mile walk from the railway station.
 
-The Summer School venue (the Mountjoy Centre and Department of Computer Science, DH! 3UP) is about a mile from the hotel, or 1.5 miles from the station (with the most direct route from the station being a beautiful walk along the river banks).
+The [Summer School venue](https://www.google.com/maps/place/Durham+DH1+3UP) (the Mountjoy Centre and Department of Computer Science, DH1 3UP) is about a mile from the hotel, or 1.5 miles from the station (with the most direct route from the station being a beautiful walk along the river banks).
 
 The [summer school location is here](https://hpc-days.github.io/Durham-HPC-Days-2026/rooms/) - please go to the main entrance of the Mountjoy Centre upon arrival to register.
 
